@@ -27,3 +27,5 @@ Prosty system rejestracji, logowania, odzyskiwania hasła oraz panel administrat
 ```bash
 git clone https://github.com/Dosk0ff/secure-app.git
 cd secure-app
+npm install 
+npm start
