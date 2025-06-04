@@ -25,5 +25,5 @@ Prosty system rejestracji, logowania, odzyskiwania hasła oraz panel administrat
 1. **Sklonuj repozytorium:**
 
 ```bash
-git clone https://github.com/twoja-nazwa-uzytkownika/nazwa-projektu.git
+git clone https://github.com/Dosk0ff/secure-app.git
 cd nazwa-projektu
