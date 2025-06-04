@@ -15,8 +15,8 @@ Prosty system rejestracji, logowania, odzyskiwania hasła oraz panel administrat
 
 ## 🛠️ Wymagania
 
-- Node.js (v18+)
-- MongoDB (lokalnie lub zdalnie)
+- Node.js (v18+) https://nodejs.org/en
+- MongoDB (lokalnie lub zdalnie) https://www.mongodb.com/
 
 ---
 
