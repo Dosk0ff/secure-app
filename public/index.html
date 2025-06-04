@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure App</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<h1>🔐 Secure App</h1>
+
+<!-- Обычные действия -->
+<div class="card-container">
+    <div class="card" onclick="toggle('register')">
+        <h3>📝 Register</h3>
+        <p>Create a new account</p>
+    </div>
+    <div class="card" onclick="toggle('login')">
+        <h3>🔐 Login</h3>
+        <p>Access your account</p>
+    </div>
+    <div class="card" onclick="toggle('restore')">
+        <h3>🛠️ Restore</h3>
+        <p>Reset your password</p>
+    </div>
+    <div class="card" onclick="toggle('decrypt')">
+        <h3>🧪 Decrypt</h3>
+        <p>Decode an encrypted string</p>
+    </div>
+</div>
+
+<!-- Заголовок админки -->
+<h2 class="admin-title">🔒 Admin Panel</h2>
+
+<!-- Админские действия -->
+<div class="card-container admin-panel">
+    <div class="card admin-card" onclick="toggle('money')">
+        <h3>💰 Currency</h3>
+        <p>Admin only</p>
+    </div>
+    <div class="card admin-card" onclick="toggle('users')">
+        <h3>📋 Users</h3>
+        <p>Admin only</p>
+    </div>
+    <div class="card admin-card" onclick="toggle('backup')">
+        <h3>📦 Backup</h3>
+        <p>Manual export</p>
+    </div>
+</div>
+
+<!-- Формы -->
+<div id="register" class="form-section">
+    <h2>Register</h2>
+    <input id="reg-username" placeholder="Username" />
+    <input id="reg-password" type="password" placeholder="Password" />
+    <input id="reg-secret" placeholder="Secret phrase" />
+    <button onclick="register()">Sign Up</button>
+</div>
+
+<div id="login" class="form-section">
+    <h2>Login</h2>
+    <input id="login-username" placeholder="Username" />
+    <input id="login-password" type="password" placeholder="Password" />
+    <button onclick="login()">Sign In</button>
+</div>
+
+<div id="restore" class="form-section">
+    <h2>Restore Password</h2>
+    <input id="restore-username" placeholder="Username" />
+    <input id="restore-password" type="password" placeholder="New Password" />
+    <input id="restore-secret" placeholder="Secret phrase" />
+    <button onclick="restore()">Restore</button>
+</div>
+
+<div id="decrypt" class="form-section">
+    <h2>Decrypt String</h2>
+    <input id="decrypt-input" placeholder="Encrypted string" />
+    <button onclick="decrypt()">Decrypt</button>
+    <pre id="decrypt-result"></pre>
+</div>
+
+<div id="money" class="form-section">
+    <h2>Update Currency</h2>
+    <input id="money-admin" placeholder="Admin login" />
+    <input id="money-pass" type="password" placeholder="Admin password" />
+    <input id="money-user" placeholder="Target user" />
+    <input id="money-amount" placeholder="Amount" />
+    <button onclick="updateCurrency()">Update</button>
+</div>
+
+<div id="users" class="form-section">
+    <h2>Get Users</h2>
+    <input id="admin-login" placeholder="Admin login" />
+    <input id="admin-pass" type="password" placeholder="Admin password" />
+    <button onclick="getUsers()">Fetch Users</button>
+    <pre id="users-list"></pre>
+</div>
+
+<div id="backup" class="form-section">
+    <h2>📦 Backup Database</h2>
+    <input id="backup-admin" placeholder="Admin login" />
+    <input id="backup-pass" type="password" placeholder="Admin password" />
+    <button onclick="manualBackup()">Create Backup</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+log.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups or database dumps
+backup/
+*.bak
+*.gz
+*.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
