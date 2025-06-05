@@ -23,6 +23,7 @@ Prosty system rejestracji, logowania, odzyskiwania hasła oraz panel administrat
 ## 📦 Instalacja
 
 1. **Sklonuj repozytorium:**
+2. Zmień nazwę pliku .env.example na .envb i w razie potrzeby edytuj go według własnych potrzeb.
 
 ```bash
 git clone https://github.com/Dosk0ff/secure-app.git

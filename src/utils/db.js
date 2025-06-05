@@ -13,7 +13,7 @@ const connectToMongoDB = async () => {
 const UserSchema = new mongoose.Schema({
   username: String,
   password: String,
-  secret: String // добавим поле с зашифрованной строкой
+  secret: String
 });
 
 const UserModel = mongoose.model('User', UserSchema);
